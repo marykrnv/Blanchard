@@ -1,0 +1,190 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.header__top {
+  background-color: #000;
+}
+
+.header-top__container,
+.header-bottom__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top__container {
+  height: 100px;
+}
+
+.header__logo {
+  width: 173px;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 62px;
+}
+
+.header__bottom {
+  background-color:rgba(0, 0, 0, 0.4);
+}
+
+.header-bottom__container {
+  height: 70px;
+}
+
+.form {
+  display: flex;
+}
+
+.header__selects {
+  display: flex;
+}
+
+.choices:not(:last-child) {
+  margin-right: 90px;
+}
+
+.choices {
+  margin-bottom: 0;
+}
+
+.choices__inner {
+  font-size: 18px;
+  line-height: 25px;
+  background-color: inherit;
+  border: none;
+  transition: .3s;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.choices__list--dropdown {
+  margin-top: 12px;
+  padding: 40px 19px 40px 40px;
+  width: 300px;
+  border: none;
+}
+
+.is-open .choices__list--dropdown {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.choices__list--dropdown .choices__item--selectable {
+  margin-right: 19px;
+  padding: 10px 14px;
+  border: 2px solid  rgba(0, 0, 0, 0);
+  background-image: url(../img/Versailles_Wall_Mural.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.choices__list--dropdown .choices__item--selectable:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: inherit;
+}
+
+.choices[data-type*=select-one]::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  margin-top: 0;
+  width: 7px;
+  height: 7px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  transition: .3s;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  top: 48%;
+  margin-top: 0;
+  border-color: #fff;
+  transform: rotate(225deg);
+  /* -webkit-transform: rotate(45deg); */
+}
+
+.choices__inner,
+.choices__list--single {
+  padding-left: 0;
+}
+
+.choices__inner:hover {
+  color: #c283f3;
+}
+
+.choices[data-type*=select-one]:hover::after,
+.choices__list--dropdown .choices__item--selectable:hover,
+.header__form:hover .header__input,
+.header__input:focus {
+  border-color: #c283f3;
+}
+
+.choices__list--dropdown .choices__item--selectable:active {
+  border-color: #d1a9f0;
+}
+
+.choices__inner:active {
+  color: #7943a4;
+}
+
+.choices[data-type*=select-one]:active::after {
+  border-color: #7943a4;
+}
+
+.choices__list--dropdown [data-id="1"] {
+  display: none;
+}
+
+.header__button-search {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/loupe.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: inherit;
+  background-position: center;
+  cursor: pointer;
+}
+
+.header__form:hover .header__button-search {
+  filter: brightness(0) invert(58%) sepia(34%) saturate(1436%) hue-rotate(222deg) contrast(92%);
+}
+
+.header__input {
+  font-size: inherit;
+  caret-color: #c283f3;
+  background-color: inherit;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.header__input::placeholder {
+  color: inherit;
+}
+
+::-webkit-scrollbar{
+  width: 2px;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #c283f3;
+}
+

@@ -1,0 +1,65 @@
+.hero {
+  position: relative;;
+  height: 800px;
+}
+  
+.swiper-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: inherit;
+  z-index: -1;
+}
+
+.swiper-container .swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__slide-1 {
+  background: url(../img/Alcazar_De_Segovia.jpg);
+}
+
+.banner__slide-2 {
+  background: url(../img/Versailles_Wall_Mural.jpg );
+}
+
+.banner__slide-3 {
+  background: url(../img/forest.jpg);
+}
+
+.hero__container {
+  padding: 239px 0 122px 160px;
+  width: 750px;
+}
+
+.hero__title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  color: #fff;
+}
+
+.hero__description {
+  margin-bottom: 94px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 22px 35px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  border-radius: 100px;
+  background-color: #9d5cd0;
+}

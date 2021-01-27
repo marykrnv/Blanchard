@@ -1,0 +1,13 @@
+.about__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about__title {
+  margin-bottom: 15px;
+}
+
+.about__description {
+  max-width: 1080px;
+  letter-spacing: -1px;
+}

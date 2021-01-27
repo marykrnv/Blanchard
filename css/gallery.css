@@ -1,0 +1,13 @@
+.gallery {
+  height: 995px;
+  background-image: url(../img/Flowers.jpg);
+}
+
+.gallery__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.gallery__title {
+  color: #fff;
+}
